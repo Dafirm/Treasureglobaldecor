@@ -1,0 +1,51 @@
+
+export const services = [
+  {
+    width: 60,
+    height: 60,
+    imageSrc: "/assets/images/event.PNG",
+    imageAlt: "Image Description",
+    title: "Event Planning and branding",
+    text: "Complete coordination with a creative identity that matches your vision.",
+  },
+  {
+    width: 60,
+    height: 60,
+    imageSrc: "/assets/images/corporate.PNG",
+    imageAlt: "Image Description",
+    title: "Corporate Event",
+    text: "Professional and branded styling for conferences, launches, and retreats.",
+  },
+  {
+    width: 60,
+    height: 60,
+    imageSrc: "/assets/images/floral.PNG",
+    imageAlt: "Image Description",
+    title: "Floral Decor",
+    text: "Stunning arrangements that bring beauty, emotion, and atmosphere to every occasion.",
+  },
+  {
+    width: 60,
+    height: 60,
+    imageSrc: "/assets/images/interior.PNG",
+    imageAlt: "Image Description",
+    title: "Interior Decor",
+    text: "Transforming spaces with elegance for both personal and commercial environments.",
+  },
+  {
+    width: 60,
+    height: 60,
+    imageSrc: "/assets/images/balloon.PNG",
+    imageAlt: "Image Description",
+    title: "Balloon Artistry",
+    text: ` Unique balloon installations for playful, festive, or luxurious expressions.`,
+  },
+  {
+    width: 60,
+    height: 60,
+    imageSrc: "/assets/images/rent.PNG",
+    imageAlt: "Image Description",
+    title: "Rentals",
+    text: "High quality decor items, props, and equipment to complement any event style.",
+  },
+];

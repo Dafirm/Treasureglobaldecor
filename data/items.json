@@ -1,0 +1,62 @@
+ [
+  {
+    "id": 1,
+    "name": "Money Gun",
+    "price": 20,
+    "image": "/assets/images/gun.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Backdrop Stand (3m)",
+    "price": 50,
+    "image": "/assets/images/3mstand.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Backdrop Stand (6m)",
+    "price": 90,
+    "image": "/assets/images/stand.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Table Covers",
+    "price": 10,
+    "image": "/assets/images/tablecover.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Chair Covers",
+    "price": 8,
+    "image": "/assets/images/chaircover.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Charger Plates",
+    "price": 3,
+    "image": "/assets/images/plate.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Cutleries",
+    "price": 2,
+    "image": "/assets/images/cutleries.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Circle Prop Stand",
+    "price": 60,
+    "image": "/assets/images/circle.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Centerpieces",
+    "price": 15,
+    "image": "/assets/images/centerpeices.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Foldable Table",
+    "price": 10,
+    "image": "/assets/images/tablecover.jpg"
+  }
+]
