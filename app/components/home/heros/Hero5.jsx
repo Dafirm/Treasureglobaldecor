@@ -63,12 +63,12 @@ export default function Hero5({ dark }) {
               <div className="col-md-10 offset-md-1 mb-20 mb-sm-0">
                 <h2
                   className="hs-title-11 mb-30 mb-xs-10 wow fadeInUp"
-                  data-wow-duration="1.2s"
+                  
                 >
                   TG GALLERY
                 </h2>
                 <h1 className="hs-title-12 mb-50 mb-sm-30">
-                  <span className="wow charsAnimIn" data-splitting="chars">
+                  <span className="charsAnimIn" data-splitting="chars">
                     <AnimatedText text="Plan your next event with Treasure Global Decor." />
                   </span>
                 </h1>
@@ -76,26 +76,7 @@ export default function Hero5({ dark }) {
             </div>
           </div>
 
-          {/* <div
-            className="local-scroll scroll-down-wrap-4 wow fadeInUp"
-            data-wow-offset={0}
-          >
-            <div className="full-wrapper text-end">
-              <a
-                href="/gallery/gallery"
-                className="scroll-down-4"
-                onClick={(e) => {
-                  e.preventDefault(); // prevent default jump
-                  const target = document.querySelector("#gallery");
-                  if (target) {
-                    target.scrollIntoView({ behavior: "smooth" });
-                  }
-                }}
-              >
-                <i className="mi-arrow-down size-24" />
-              </a>
-            </div>
-          </div> */}
+         
 
           <div className="hs-status wow fadeInUp" data-wow-offset={0}>
             Based in Finland, Uusima
