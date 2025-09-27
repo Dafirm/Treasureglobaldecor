@@ -11,15 +11,6 @@ export const contactItems = [
     },
   },
   {
-    iconClass: "mi-email",
-    title: "Email",
-    text: "treasureglobaldeco@gmail.com",
-    link: {
-      url: "mailto:treasureglobalddeco@gmail.com",
-      text: "Say Hello",
-    },
-  },
-  {
     iconClass: "mi-mobile",
     title: "Phone",
     text: "+358442388567",
