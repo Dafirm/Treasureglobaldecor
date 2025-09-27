@@ -1,12 +1,11 @@
 "use client";
 import { portfolios } from "@/data/portfolio";
-import React, {  useState } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import dynamic from "next/dynamic";
 import Link from "next/link";
-import Hero5 from "../components/home/heros/Hero5"
+import Hero5 from "../components/home/heros/Hero5";
 import { Gallery, Item } from "react-photoswipe-gallery";
-import Slider from "./Slider"
 
 const filters = [
   { name: "All", category: "all" },
@@ -15,15 +14,19 @@ const filters = [
   { name: "Wedding", category: "wedding" },
   { name: "Interior", category: "interior" },
 ];
-export default function Page({ dark = false }) {
+
+export default function Page() {
   const [currentCategory, setCurrentCategory] = useState("all");
   const [filtered, setFiltered] = useState(portfolios);
 
-  
+  // define dark here instead of props
+  const dark = false;
+
   const ParallaxContainer = dynamic(
-      () => import("../components/common/ParallaxContainer"),
-      { ssr: false }
-    );
+    () => import("../components/common/ParallaxContainer"),
+    { ssr: false }
+  );
+
   return (
     <>
       <ParallaxContainer
@@ -36,9 +39,9 @@ export default function Page({ dark = false }) {
         <Hero5 />
       </ParallaxContainer>
       <section
-        className={`page-section pb-0  scrollSpysection  ${
+        className={`page-section pb-0 scrollSpysection ${
           dark ? "bg-dark-1 light-content" : ""
-        } `}
+        }`}
         id="portfolio"
       >
         <div className="container">
@@ -79,7 +82,6 @@ export default function Page({ dark = false }) {
             </a>
           ))}
         </div>
-        {/* End Works Filter */}
       </div>
       <div className="position-relative">
         {/* Works Grid */}
@@ -88,7 +90,6 @@ export default function Page({ dark = false }) {
           id="work-grid"
         >
           <Gallery>
-            {/* Work Item (Lightbox) */}
             {filtered.map((item, index) => (
               <li
                 key={index}
@@ -108,7 +109,6 @@ export default function Page({ dark = false }) {
                       >
                         <div className="work-img">
                           <div className="work-img-bg wow-p scalexIn" />
-
                           <Image
                             src={item.imageSrc}
                             ref={ref}
@@ -145,7 +145,7 @@ export default function Page({ dark = false }) {
                   </Link>
                 )}
               </li>
-            ))}{" "}
+            ))}
           </Gallery>
         </ul>
       </div>
