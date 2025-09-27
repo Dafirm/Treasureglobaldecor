@@ -90,7 +90,7 @@ export default function About() {
             <div className="spot-box-text">
               <span className="text-gray">
                 We design events <br />
-                for over 10 years.
+                for over 5 years.
               </span>
             </div>
           </div>
