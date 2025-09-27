@@ -28,7 +28,7 @@ export default function CheckoutPage() {
 
   return (
     <div className="theme-elegant">
-      {/* Hero Section */}
+     
       <ParallaxContainer
         className="home-section bg-dark-alpha-30 parallax-5 light-content z-index-1 scrollSpysection"
         style={{ backgroundImage: "url(/assets/images/ban1.png)" }}
@@ -37,14 +37,14 @@ export default function CheckoutPage() {
         <Hero4 />
       </ParallaxContainer>
 
-      {/* Checkout Section */}
+      
       <section className="container mx-auto px-6 py-12">
         <h2 className="text-3xl font-bold mb-10 text-center text-gray-900">
           Checkout
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-          {/* Checkout Form */}
+         
           <form
             onSubmit={handleSubmit}
             className="space-y-5 bg-white p-6 rounded-xl shadow-md border"

@@ -41,27 +41,9 @@ export default function Header2({ links }) {
           <ul className="clearlist scroll-nav local-scroll justify-content-end scrollspyLinks">
             <Nav3 links={links} />
             <li className="ms-3 me-2" />
-            {/* <li>
-              <Link
-                href="/rental" // this matches app/rental/page.jsx
-                className="opacity-1 no-hover"
-              >
-                <span
-                  className="btn btn-mod btn-small btn-border-w btn-circle"
-                  data-btn-animate="y"
-                >
-                  <span className="btn-animate-y">
-                    <span className="btn-animate-y-1">Rentals</span>
-                    <span className="btn-animate-y-2" aria-hidden="true">
-                      Rentals
-                    </span>
-                  </span>
-                </span>
-              </Link>
-            </li> */}
           </ul>
         </div>
-        {/* End Main Menu */}
+      
       </div>
     </>
   );

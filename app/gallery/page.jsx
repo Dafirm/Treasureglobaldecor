@@ -1,6 +1,6 @@
 "use client";
 import { portfolios } from "@/data/portfolio";
-import React, { useEffect, useState } from "react";
+import React, {  useState } from "react";
 import Image from "next/image";
 import dynamic from "next/dynamic";
 import Link from "next/link";
@@ -19,21 +19,6 @@ export default function Page({ dark = false }) {
   const [currentCategory, setCurrentCategory] = useState("all");
   const [filtered, setFiltered] = useState(portfolios);
 
-  // const [currentIndex, setCurrentIndex] = useState(0);
-
-  //  useEffect(() => {
-  //    const interval = setInterval(() => {
-  //      setCurrentIndex((prev) => (prev + 1) % images.length);
-  //    }, 5000);
-  //    return () => clearInterval(interval);
-  //  }, []);
-
-// const images = [
-//   "/assets/images/ban1.png",
-//   "/assets/images/ban2.png",
-//   "/assets/images/ban3.png",
-// ];
-
   
   const ParallaxContainer = dynamic(
       () => import("../components/common/ParallaxContainer"),
@@ -42,15 +27,14 @@ export default function Page({ dark = false }) {
   return (
     <>
       <ParallaxContainer
-                    className="home-section bg-dark-alpha-30 parallax-5 light-content z-index-1 scrollSpysection"
-                    style={{
-                      backgroundImage:
-                        "url(/assets/images/ban1.png)",
-                    }}
-                    id="home"
-                  >
-                    <Hero5 />
-                  </ParallaxContainer>
+        className="home-section bg-dark-alpha-30 parallax-5 light-content z-index-1 scrollSpysection"
+        style={{
+          backgroundImage: "url(/assets/images/ban1.png)",
+        }}
+        id="home"
+      >
+        <Hero5 />
+      </ParallaxContainer>
       <section
         className={`page-section pb-0  scrollSpysection  ${
           dark ? "bg-dark-1 light-content" : ""
@@ -163,9 +147,17 @@ export default function Page({ dark = false }) {
               </li>
             ))}{" "}
           </Gallery>
-          {/* End Work Item */}
         </ul>
-        {/* End Works Grid */}
+      </div>
+      <div className="col-12 d-flex justify-content-center py-5">
+        <a
+          href="https://www.instagram.com/treasureglobaldecor?igsh=MWloYTlubWo1bGxjaw%3D%3D&utm_source=qr"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="section-more"
+        >
+          View More Events on IG <i className="mi-chevron-right size-14" />
+        </a>
       </div>
     </>
   );

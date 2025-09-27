@@ -267,36 +267,7 @@ export default function Home5({ onePage = false, dark = false }) {
         <Service />
       </section>
       <hr className="mt-0 mb-0" />
-      {/* <section
-        className={`page-section pb-0  scrollSpysection  ${
-          dark ? "bg-dark-1 light-content" : ""
-        } `}
-        id="portfolio"
-      >
-        <div className="container">
-          <div className="row mb-70 mb-sm-50">
-            <div className="col-md-8 offset-md-2 col-lg-6 offset-lg-3 text-center">
-              <h2 className="section-title mb-30 mb-sm-20">
-                <span className="text-gray">Our</span> Portfolio
-                <span className="text-gray">.</span>
-              </h2>
-              <div className="text-gray">
-                <p className="mb-0">
-                  At <strong>Treasure Global Decor</strong>, we don’t just
-                  decorate we design experiences. Every project reflects a
-                  unique story, creatively told through thoughtful detail,
-                  stylish execution, and purposeful design.
-                </p>
-                <p className="mb-0 mt-3">
-                  Our portfolio captures the essence of events brought to life
-                  with precision, passion, and personal flair.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <Portfolio />
-      </section> */}
+   
       <section
         className={`small-section ${
           dark ? "bg-dark-2 light-content" : "bg-dark-1 light-content"
@@ -371,7 +342,7 @@ export default function Home5({ onePage = false, dark = false }) {
           backgroundImage: "url(/assets/images/footer1.png)",
         }}
       >
-        {/* <NewsLetter /> */}
+       
       </section>
       <section
         className={`page-section  scrollSpysection  ${

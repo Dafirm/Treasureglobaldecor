@@ -59,27 +59,8 @@ export default function Header5({ links }) {
                 </span>
               </Link>
             </li>
-            {/* <li>
-              <Link
-                href="/rental" // this matches app/rental/page.jsx
-                className="opacity-1 no-hover"
-              >
-                <span
-                  className="btn btn-mod btn-small btn-border-w btn-circle"
-                  data-btn-animate="y"
-                >
-                  <span className="btn-animate-y">
-                    <span className="btn-animate-y-1">Rentals</span>
-                    <span className="btn-animate-y-2" aria-hidden="true">
-                      Rentals
-                    </span>
-                  </span>
-                </span>
-              </Link>
-            </li> */}
           </ul>
         </div>
-        {/* End Main Menu */}
       </div>
     </>
   );
