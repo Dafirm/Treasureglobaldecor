@@ -137,7 +137,7 @@ export const portfolios = [
   },
   {
     id: 20,
-    imageSrc: "/assets/images/Wed3.png",
+    imageSrc: "/assets/images/wed3.png",
     // title: "Wedding",
     type: "View",
     categories: ["wedding", "all"],

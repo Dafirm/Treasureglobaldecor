@@ -19,16 +19,16 @@ export const teamMembers2 = [
       { platform: "Instagram", icon: "fa-instagram-i", url: "#" },
     ],
   },
-  // {
-  //   name: "Solomon",
-  //   role: "Set-Up Crew",
-  //   image: "/assets/images/team/team-4.jpg",
-  //   socials: [
-  //     { platform: "Facebook", icon: "fa-facebook-f", url: "#" },
-  //     { platform: "Twitter", icon: "fa-twitter", url: "#" },
-  //     { platform: "Instagram", icon: "fa-instagram-i", url: "#" },
-  //   ],
-  // },
+  {
+    name: "Solomon",
+    role: "Set-Up Crew",
+    image: "/assets/images/solomon.JPG",
+    socials: [
+      { platform: "Facebook", icon: "fa-facebook-f", url: "#" },
+      { platform: "Twitter", icon: "fa-twitter", url: "#" },
+      { platform: "Instagram", icon: "fa-instagram-i", url: "#" },
+    ],
+  },
   {
     name: "Alex",
     role: "Logistics Coordinator",

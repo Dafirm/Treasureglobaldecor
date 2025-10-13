@@ -38,9 +38,9 @@ export default function About() {
               <div className="spot-box-icon float-end ms-3" />
             <div className="spot-box-text text-end">
               <span className="text-gray">
-                We've designed more than <br />
+                Let's design your next<br />
               </span>
-              30 events.
+              events.
             </div>
             
           </div>
@@ -90,7 +90,7 @@ export default function About() {
             <div className="spot-box-text">
               <span className="text-gray">
                 We design events <br />
-                for over 5 years.
+                with love and passion.
               </span>
             </div>
           </div>
