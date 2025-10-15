@@ -21,7 +21,7 @@ export const teamMembers2 = [
   },
   {
     name: "Solomon",
-    role: "Set-Up Crew",
+    role: "Set-Up Team-lead",
     image: "/assets/images/solomon.JPG",
     socials: [
       { platform: "Facebook", icon: "fa-facebook-f", url: "#" },
@@ -31,7 +31,7 @@ export const teamMembers2 = [
   },
   {
     name: "Alex",
-    role: "Logistics Coordinator",
+    role: "Logistics Manager",
     image: "/assets/images/lexy.png",
     socials: [
       { platform: "Facebook", icon: "fa-facebook-f", url: "#" },

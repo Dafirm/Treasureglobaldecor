@@ -14,8 +14,9 @@ const ParallaxContainer = dynamic(
 );
 
 export const metadata = {
-  title: "Treasure Global Decor",
-  description: "Decoration & Event Styling",
+  title: "Treasure Global Decor | Event Decoration & Styling in Finland",
+  description:
+    "Treasure Global Decor specializes in luxury event styling, floral design, balloon artistry, and interior decoration across Finland. We transform spaces into breathtaking experiences for weddings, birthdays, and corporate events.",
   icons: {
     icon: "/tgicon.ico",
   },
