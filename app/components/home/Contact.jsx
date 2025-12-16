@@ -151,6 +151,7 @@ export default function Contact() {
         </div>
       </div>
 
+
       {/* Toast Notifications */}
       <ToastContainer position="top-right" autoClose={4000} />
     </div>

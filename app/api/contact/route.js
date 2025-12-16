@@ -14,9 +14,10 @@ export async function POST(req) {
       public: process.env.EMAILJS_PUBLIC_KEY ? "LOADED" : "MISSING",
       private: process.env.EMAILJS_PRIVATE_KEY ? "LOADED" : "MISSING",
     });
+    console.log("Template ID:", process.env.EMAILJS_TEMPLATE_ID);
 
     const response = await emailjs.send(
-      process.env.EMAILJS_SERVICE_ID,
+      process.env.EMAILJS_SERVICE_ID,      
       process.env.EMAILJS_TEMPLATE_ID,
       {
         from_name: name,

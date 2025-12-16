@@ -22,7 +22,7 @@ export const teamMembers2 = [
   {
     name: "Solomon",
     role: "Set-Up Team-lead",
-    image: "/assets/images/solomon.JPG",
+    image: "/assets/images/team3.png",
     socials: [
       { platform: "Facebook", icon: "fa-facebook-f", url: "#" },
       { platform: "Twitter", icon: "fa-twitter", url: "#" },
@@ -32,7 +32,7 @@ export const teamMembers2 = [
   {
     name: "Alex",
     role: "Logistics Manager",
-    image: "/assets/images/lexy.png",
+    image: "/assets/images/team4.png",
     socials: [
       { platform: "Facebook", icon: "fa-facebook-f", url: "#" },
       { platform: "Twitter", icon: "fa-twitter", url: "#" },
