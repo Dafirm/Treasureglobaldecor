@@ -4,41 +4,73 @@ import { contactItems } from "@/data/contact";
 import React, { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import emailjs from "@emailjs/browser";
+
 
 export default function Contact() {
   const [loading, setLoading] = useState(false);
+
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   setLoading(true);
+
+  //   try {
+  //     const form = e.target;
+  //     const fullName = form.name.value.trim();
+  //     const firstName = fullName.split(" ")[0]; // ✅ extract first name
+
+  //     await emailjs.send(
+  //       process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+  //       process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+  //       {
+  //         name: fullName,
+  //         first_name: firstName, // ✅ send to template
+  //         email: form.email.value,
+  //         message: form.message.value,
+  //       },
+  //       process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+  //     );
+
+  //     toast.success("✅ Message sent successfully!");
+  //     form.reset();
+  //   } catch (err) {
+  //     console.error("EmailJS Error:", err);
+  //     toast.error("❌ Failed to send message.");
+  //   } finally {
+  //     setLoading(false);
+  //   }
+  // };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
 
-    try {
-      const form = e.target;
-      const fullName = form.name.value.trim();
-      const firstName = fullName.split(" ")[0]; // ✅ extract first name
+    const form = e.target;
 
-      await emailjs.send(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
-        {
-          name: fullName,
-          first_name: firstName, // ✅ send to template
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: form.name.value,
           email: form.email.value,
           message: form.message.value,
-        },
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
-      );
+        }),
+      });
+
+      if (!res.ok) throw new Error();
 
       toast.success("✅ Message sent successfully!");
       form.reset();
     } catch (err) {
-      console.error("EmailJS Error:", err);
+      console.error(err);
       toast.error("❌ Failed to send message.");
     } finally {
       setLoading(false);
     }
   };
+
+
+
 
   return (
     <div className="container position-relative">
